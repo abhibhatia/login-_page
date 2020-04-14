@@ -1,0 +1,57 @@
+body{
+    display: grid;
+    padding:0;
+    margin:0;
+    background: url(pic5.jpg);
+    grid-template-column: 40% 60%;
+    grid-template-rows: 180px 200px 200px 70px;
+    grid-template-areas: "head head"
+                         "summary hobbies"
+                         "img profession"
+                         "footer footer";
+}
+h1{
+    grid-area:head;
+    color:black;
+    background:lightslategray;
+    background-size: cover; 
+    text-align: center;
+    font-size: 70px;
+}
+aside{
+    grid-area:summary;
+    background:peru;
+    color:white;
+}
+
+div{
+    grid-area:hobbies;
+    color:white;
+    background: seagreen;
+}
+#imgi { 
+    grid-area:img;
+    background:cyan;
+}
+#imgi img{
+    object-fit: cover;
+}
+main{
+    grid-area:profession;
+    background-color: burlywood;
+    color: green;
+}
+footer{
+    grid-area:footer;
+    background:black;
+    color:white;
+    text-align: center;
+    list-style: none;
+    margin:0;
+    padding:0;
+    font-size: 20px;
+}
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+}
