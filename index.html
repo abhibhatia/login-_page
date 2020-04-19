@@ -6,17 +6,20 @@
     <div class="loginbox">
     <img src="avatar.png" class="avatar">
         <h1>Login Here</h1>
-        <form action="./secondpage.html">
+        <form class="login-form" action="secondpage.html" method="post" name="form" onsubmit="return validated()">   
             <p>Username</p>
-            <input type="text" name="" placeholder="Enter Username">
+                
+            <input type="text" name="email" placeholder="Enter Username">
+            <div id="email_error">Please fill up your Email or Phone</div>
             <p>Password</p>
-            <input type="password" name="" placeholder="Enter Password">
-            <input type="submit" name="" value="Login">
+            <input type="password" name="password" placeholder="Enter Password">
+            <div id="pass_error">Please fill up your Password</div>
+            <button type="submit">Login</button>
             <a href="#">Lost your password?</a><br>
             <a href="#">Don't have an account?</a>
         </form>
     </div>
-
+    <script src="valid.js"></script>
 </body>
 </head>
 </html>
